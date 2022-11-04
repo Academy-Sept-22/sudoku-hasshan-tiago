@@ -23,7 +23,7 @@ class SudokuShould {
         String matrix = "1,2,3,4,\n" +
                 "2,1,4,3,\n" +
                 "3,4,1,2,\n" +
-                "4,3,2,1,";
+                "4,3,2,1,\n";
 
 
         given(matrixParser.parse(matrix)).willThrow(new Exception("Invalid matrix"));
@@ -38,7 +38,7 @@ class SudokuShould {
         String matrix = "1,2,3,4,\n" +
                 "3,4,1,2,\n" +
                 "2,3,4,1,\n" +
-                "4,1,2,3,";
+                "4,1,2,3,\n";
 
         given(matrixParser.parse(matrix)).willReturn(new Matrix());
         Sudoku sudoku = new Sudoku(matrix, matrixParser, console);

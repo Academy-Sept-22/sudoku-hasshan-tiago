@@ -18,7 +18,7 @@ public class Level0AcceptanceTest {
         String matrix = "1,2,3,4,\n" +
                 "2,1,4,3,\n" +
                 "3,4,1,2,\n" +
-                "4,3,2,1,";
+                "4,3,2,1,\n";
 
         MatrixParser matrixParser = new MatrixParser();
         Sudoku sudoku = new Sudoku(matrix, matrixParser, console);
@@ -32,7 +32,7 @@ public class Level0AcceptanceTest {
         String matrix = "1,2,3,4,\n" +
                 "3,4,1,2,\n" +
                 "2,3,4,1,\n" +
-                "4,1,2,3,";
+                "4,1,2,3,\n";
 
         MatrixParser matrixParser = new MatrixParser();
         Sudoku sudoku = new Sudoku(matrix, matrixParser, console);
